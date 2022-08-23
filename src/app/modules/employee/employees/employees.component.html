@@ -1,0 +1,42 @@
+<div class="row" >
+    <div class="col-md-6 form group">
+        <input type="text" placeholder="First Name" class="form-control" [(ngModel)]="employeeService.currentEmployee.firstName">
+    </div>
+    <div class="col-md-6 form group">
+        <input type="text" placeholder="Last Name" class="form-control" [(ngModel)]="employeeService.currentEmployee.lastName">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 form group" style="padding-top:10px;">
+        <input type="text" placeholder="Designation" class="form-control" [(ngModel)]="employeeService.currentEmployee.designation">
+    </div>
+</div>
+
+<div class="row" style="padding-top:10px;">
+    <div class="col-md-6 form group">
+        <input type="text" placeholder="Contact" class="form-control" [(ngModel)]="employeeService.currentEmployee.contactNumber">
+    </div>
+    <div class="col-md-6 form group">
+        <input type="text" placeholder="Address" class="form-control" [(ngModel)]="employeeService.currentEmployee.address">
+    </div>
+</div>
+
+<div class="row" style="padding-top:10px;">
+    <div class="col-md-8">
+      <button class="btn btn-success btn-lg btn-block" (click)="createAndUpdate(employeeService.currentEmployee)">
+        <i class="fa fa-save"></i>
+        SAVE
+      </button>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-lg btn-block" (click)="clear()">
+        <i class="fa fa-retweet"></i>
+        CLEAR
+      </button>
+    </div>
+  </div>
+
+
+
+

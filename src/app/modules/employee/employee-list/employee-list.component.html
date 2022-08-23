@@ -1,0 +1,21 @@
+<table class="table table-hover">
+  <tr>
+    <td>{{employee.id}}</td>
+    <td>{{employee.firstName}}</td>
+    <td>{{employee.lastName}}</td>
+    <td>{{employee.address}}</td>
+    <td>{{employee.contactNumber}}</td>
+    <td>{{employee.designation}}</td>
+    <td>
+      <a class="btn" (click)="edit(employee)">
+        <i class="fa fa-edit"></i>
+      </a>
+    </td>
+
+    <td>
+      <a class="btn text-danger" (click)="deleteEmployee(employee)">
+        <i class="fa fa-trash"></i>
+      </a>
+    </td>
+  </tr>
+</table>

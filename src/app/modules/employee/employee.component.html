@@ -1,0 +1,9 @@
+<div class="row" style="background: aliceblue; padding: 20px;">
+    <div class="col-md-6">
+        <app-employees (employeeCreateAndEdit)="createAndUpdate($event)"></app-employees>
+    </div>
+    <div class="col-md-6">
+        <app-employee-list *ngFor="let employee of allEmployee" [employee]="employee" (employeeEdit)="edit($event)"
+            (employeeDelete)="deleteEmployee($event)"></app-employee-list>
+    </div>
+</div>
